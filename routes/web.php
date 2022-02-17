@@ -31,10 +31,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->resource('/dashboard/user',UserController::class);
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/admin', function () {
-    return Inertia::render('Admin/Dashboard');
-})->name('admin');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/admin2', function () {
-    return Inertia::render('Admin2/Dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('admin2', function () {
+    return Inertia::render('Admin2');
 })->name('admin2');

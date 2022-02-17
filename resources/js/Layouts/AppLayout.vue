@@ -23,7 +23,7 @@
                                     Dashboard
                                 </jet-nav-link>
                                 <jet-nav-link :href="route('user.index')" :active="route().current('user.index')">
-                                    User 
+                                    Usfer 
                                 </jet-nav-link>
                             </div>
                         </div>
@@ -113,10 +113,6 @@
 
                                         <jet-dropdown-link :href="route('profile.show')">
                                             Profile
-                                        </jet-dropdown-link>
-
-                                        <jet-dropdown-link :href="route('admin')">
-                                            Admin
                                         </jet-dropdown-link>
 
                                         <jet-dropdown-link :href="route('admin2')">

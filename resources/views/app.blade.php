@@ -26,8 +26,7 @@
         @inertia
 
         @env ('local')
-            {{-- <script src="http://localhost:3000/browser-sync/browser-sync-client.js"></script> --}}
-            {{-- <script src="http://127.0.0.1:8000/browser-sync/browser-sync-client.js"></script> --}}
+        
         @endenv
     </body>
     <script src="{{asset('admin/js/app.js')}}"></script>
